@@ -478,7 +478,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--accent-gold);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .nav-link:hover::after {
@@ -499,15 +499,24 @@ body {
 }
 
 .nav-cta {
-    padding: 0.6rem 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.65rem 1.8rem;
     background: linear-gradient(135deg, #f4dea3 0%, #d3ab56 100%);
     color: #120a04;
-    border-radius: 999px;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.09em;
     text-transform: uppercase;
+    box-shadow: 0 16px 36px rgba(212, 175, 55, 0.35);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 14px 32px rgba(212, 175, 55, 0.4);
+    clip-path: polygon(18px 0%, 100% 0%, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0% 100%, 0% 18px);
+    -webkit-clip-path: polygon(18px 0%, 100% 0%, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0% 100%, 0% 18px);
+}
+
+.nav-cta i {
+    font-size: 0.95rem;
+    color: #120a04;
 }
 
 .nav-cta::after {
