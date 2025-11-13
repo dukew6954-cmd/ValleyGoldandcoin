@@ -2599,10 +2599,15 @@ a.giving-logo-card span,
     .buyer-list-inner {
         grid-template-columns: 1fr;
         padding: 2.25rem;
+        border-radius: 26px;
     }
 
     .buyer-list-form-card {
-        padding: 2rem;
+        padding: 1.85rem;
+    }
+
+    .buyer-list-inner::before {
+        opacity: 0.4;
     }
 }
 
@@ -2618,6 +2623,81 @@ a.giving-logo-card span,
 
     .footer-logo-image {
         height: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+     .buyer-list-submit {
+         align-self: stretch;
+         justify-content: center;
+     }
+
+    #buyer-list.buyer-list-section {
+        padding: 3.75rem 0;
+    }
+
+    .buyer-list-inner {
+        padding: 1.75rem 1.35rem;
+        gap: 1.75rem;
+        border-radius: 22px;
+    }
+
+    .buyer-list-inner::before {
+        display: none;
+    }
+
+    .buyer-list-copy {
+        gap: 1.25rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .buyer-list-pill {
+        font-size: 0.68rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .buyer-list-copy h2 {
+        font-size: clamp(1.9rem, 6.5vw, 2.4rem);
+    }
+
+    .buyer-list-copy p {
+        font-size: 0.95rem;
+    }
+
+    .buyer-list-benefits {
+        gap: 0.6rem;
+        align-items: center;
+    }
+
+    .buyer-list-benefits li {
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+
+    .buyer-list-form-card {
+        padding: 1.6rem 1.25rem;
+        border-radius: 20px;
+        gap: 1.2rem;
+    }
+
+    .buyer-list-form {
+        gap: 1rem;
+    }
+
+    .form-field input,
+    .form-field textarea {
+        padding: 0.75rem 0.95rem;
+        font-size: 0.9rem;
+    }
+
+    .form-field textarea {
+        min-height: 110px;
+    }
+
+    .buyer-list-disclaimer {
+        text-align: center;
+        font-size: 0.82rem;
     }
 }
 
