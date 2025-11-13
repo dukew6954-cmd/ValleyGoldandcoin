@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Add/remove background based on scroll position
         if (scrollTop > 100) {
-            navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+            navbar.style.background = 'rgba(10, 7, 4, 0.95)';
         } else {
-            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+            navbar.style.background = 'rgba(10, 7, 4, 0.95)';
         }
         
         // Hide/show navbar on scroll direction
