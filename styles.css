@@ -2113,8 +2113,32 @@ a.giving-logo-card span,
         justify-content: center;
     }
     
-    .cta-section h2 {
+    .cta-section {
+        clip-path: none;
+        -webkit-clip-path: none;
+        padding: 3.5rem 0;
+    }
+    
+    .cta-content h2 {
         font-size: 1.8rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .giving-logo-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .giving-logo-card {
+        padding: 0.85rem 1rem;
+    }
+    
+    .giving-logo-card img {
+        width: 140px;
     }
     
     .section-header h2 {
@@ -2123,6 +2147,10 @@ a.giving-logo-card span,
     
     .section-header p {
         font-size: 1rem;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.5rem;
     }
 }
 
