@@ -1,4 +1,4 @@
-# Arizona Treasures - Luxury Gold & Diamond Buying Website
+# Valley Gold & Coin - Luxury Gold & Diamond Buying Website
 
 A stunning, high-end website for your luxury valuables buying business. Built with modern HTML5, CSS3, and JavaScript, featuring a sophisticated black, gold, and white color palette with elegant animations.
 
@@ -164,4 +164,4 @@ For customization help or questions about the website structure, refer to the in
 
 ---
 
-**Built with ❤️ for Arizona Treasures - Your trusted partner for luxury valuables.**
+**Built with ❤️ for Valley Gold & Coin - Your trusted partner for luxury valuables.**

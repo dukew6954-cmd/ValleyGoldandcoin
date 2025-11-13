@@ -1,4 +1,4 @@
-// Smooth scrolling and interactive features for Arizona Treasures website
+// Smooth scrolling and interactive features for Valley Gold & Coin website
 
 document.addEventListener('DOMContentLoaded', function() {
     // Disable browser scroll restoration so refresh starts at top

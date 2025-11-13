@@ -1965,7 +1965,7 @@ a.giving-logo-card span,
     .event-list {
         gap: 1.5rem;
     }
-
+    
     .event-card {
         padding: 1.75rem;
     }
@@ -2397,6 +2397,227 @@ a.giving-logo-card span,
     .event-info {
         flex-direction: column;
         gap: 0.6rem;
+    }
+}
+
+/* Buyer List Section */
+#buyer-list.buyer-list-section {
+    padding: var(--section-padding);
+    background: linear-gradient(180deg, #fdf7ee 0%, #f1e2c7 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.buyer-list-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 600px 420px at 10% 15%, rgba(212, 175, 55, 0.35) 0%, transparent 60%),
+                radial-gradient(ellipse 520px 420px at 85% 85%, rgba(212, 175, 55, 0.25) 0%, transparent 65%);
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.buyer-list-inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: clamp(2.5rem, 4vw, 3.5rem);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 32px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.buyer-list-inner::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -35%;
+    width: 70%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.25) 0%, rgba(212, 175, 55, 0) 70%);
+    pointer-events: none;
+}
+
+.buyer-list-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    color: var(--primary-black);
+}
+
+.buyer-list-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 1.2rem;
+    border-radius: 999px;
+    background: rgba(212, 175, 55, 0.18);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.buyer-list-copy h2 {
+    font-family: var(--font-primary);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    margin: 0;
+}
+
+.buyer-list-copy p {
+    margin: 0;
+    line-height: 1.75;
+    color: var(--text-gray);
+}
+
+.buyer-list-benefits {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+.buyer-list-benefits li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: var(--primary-black);
+    font-weight: 500;
+}
+
+.buyer-list-benefits i {
+    color: var(--accent-gold);
+    font-size: 0.95rem;
+}
+
+.buyer-list-form-card {
+    position: relative;
+    background: linear-gradient(140deg, rgba(26, 17, 10, 0.95) 0%, rgba(45, 31, 18, 0.92) 100%);
+    border-radius: 26px;
+    padding: clamp(2rem, 3vw, 2.75rem);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    box-shadow: 0 22px 55px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    color: #fff;
+    overflow: hidden;
+}
+
+.buyer-list-form-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.12), transparent 55%);
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.buyer-list-form-card h3 {
+    margin: 0;
+    font-family: var(--font-primary);
+    font-size: 1.9rem;
+    letter-spacing: 0.05em;
+}
+
+.buyer-list-form {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.form-field label {
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(212, 175, 55, 0.85);
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.25);
+}
+
+.buyer-list-submit {
+    position: relative;
+    align-self: flex-start;
+}
+
+.buyer-list-submit span:first-child {
+    letter-spacing: 0.12em;
+}
+
+.buyer-list-disclaimer {
+    margin: 0;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .nav-logo-image {
+        height: 58px;
+    }
+
+    .buyer-list-inner {
+        grid-template-columns: 1fr;
+        padding: 2.25rem;
+    }
+
+    .buyer-list-form-card {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-logo-image {
+        height: 48px;
+    }
+
+    .buyer-list-submit {
+        align-self: stretch;
+        justify-content: center;
+    }
+
+    .footer-logo-image {
+        height: 64px;
     }
 }
 
