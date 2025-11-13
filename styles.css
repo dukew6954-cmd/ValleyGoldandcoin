@@ -416,9 +416,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 2rem;
+    position: relative;
 }
 
 .nav-logo {
@@ -1775,6 +1774,25 @@ a.giving-logo-card span,
     
     .nav-menu {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        background: rgba(10, 10, 10, 0.95);
+        padding: 1.5rem;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        z-index: 1000;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
     }
     
     .hamburger {
